@@ -1,0 +1,5 @@
+- Context 仅仅是一个接口定义，根据实现的不同，可以衍生出不同类型的 context；
+- cancelCtx 实现了 Context 接口，通过 WithCancel() 创建 cancelCtx 实例；
+- timerCtx 实现了 Context 接口，通过 WithDeadline() 和 WithTimeout() 创建 timerCtx 实例；
+- valueCtx 实现了 Context 接口，通过 WithValue() 创建 valueCtx 实例；
+- 三种 context 实例可互为父节点，从而可以组合成不同的应用形式。
