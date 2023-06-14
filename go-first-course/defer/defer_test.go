@@ -1,7 +1,11 @@
 // defer_test.go
 package main
 
-import "testing"
+import (
+	"fmt"
+	"reflect"
+	"testing"
+)
 
 func sum(max int) int {
 	total := 0
